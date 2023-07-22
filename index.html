@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cardápio Soteropolitano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-config">
+      <header>
+        <h1>Cardápio Soteropolitano</h1>
+        <nav class="barra-nav">
+          <a href="#">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Bairros</a>
+          <a href="#">Contato</a>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="background">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Salvador_BA.jpg/1920px-Salvador_BA.jpg"
+          alt="teste"
+          class="bg-img"
+        />
+        <div class="gradiente"></div>
+        <section class="texto-inicio">
+          <h2>Procurando um</h2>
+          <h2>restaurante Soteropolitano?</h2>
+        </section>
+      </div>
+      <br />
+      <form action=" " id="novoEvent" method="get" target="_blank">
+        <div class="caixa-de-busca">
+          <label for="busca">
+            <input
+              class="dados-site"
+              type="text"
+              id="busca"
+              name="bairro"
+              placeholder="   Insira o nome do bairro"
+            />
+          </label>
+          <div class="botao">
+            <input type="submit" id="send" value="Pesquisar" />
+          </div>
+        </div>
+      </form>
+      <br />
+      <div class="filtros">
+        <button type="button" id="cafe-da-manha" class="nomeref">
+          Café da manhã
+        </button>
+        <button type="button" id="almoco" class="nomeref">Almoço</button>
+        <button type="button" id="jantar" class="nomeref">Jantar</button>
+        <button type="button" id="todos" class="nomeref">Todos</button>
+        <button type="button" id="favoritados" class="nomeref">
+          Favoritos
+        </button>
+      </div>
+      <br /><br />
+      <div id="card-restaurantes"></div>
+      <footer>
+        <h6>Turma 44260 - Javascript Coderhouse</h6>
+        <p>Desenvolvido por Beatriz Gomes</p>
+        <a href="https://github.com/zirtaebea">Github</a>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
